@@ -1,0 +1,15 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="40" fill="#F7F7F7"/>
+  <rect x="78" y="84" width="644" height="416" rx="34" fill="white" stroke="#353535" stroke-width="5"/>
+  <path d="M137 428V160M137 428H663" stroke="#A3A3A3" stroke-width="6" stroke-linecap="round"/>
+  <path d="M174 394C222 374 245 346 284 352C323 358 339 299 385 307C430 315 448 241 493 253C538 266 570 189 635 171" stroke="#353535" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="174" cy="394" r="14" fill="#353535"/>
+  <circle cx="284" cy="352" r="14" fill="#353535"/>
+  <circle cx="385" cy="307" r="14" fill="#353535"/>
+  <circle cx="493" cy="253" r="14" fill="#353535"/>
+  <circle cx="635" cy="171" r="14" fill="#353535"/>
+  <rect x="475" y="349" width="166" height="84" rx="22" fill="#353535"/>
+  <text x="558" y="384" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="700">PPO POLICY</text>
+  <text x="558" y="414" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="17">stable reward ↑</text>
+  <path d="M238 142L260 120L282 142M260 120V186" stroke="#353535" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
