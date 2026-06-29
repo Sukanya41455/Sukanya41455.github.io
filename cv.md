@@ -1,69 +1,85 @@
 # Sukanya Sahoo
 
-📍 College Station, TX 
-[LinkedIn](https://www.linkedin.com/in/sukanya-sahoo) · [GitHub](https://github.com/Sukanya41455)
+**College Station, TX**  
+sukanya.sahoo66@gmail.com  
+LinkedIn: https://www.linkedin.com/in/sukanya-sahoo | GitHub: https://github.com/Sukanya41455
 
 ---
 
-## Education
+## EDUCATION
 
-### Texas A&M University, College Station
-**Master of Science in Data Science** : Computer Science Track  
-**Graduation:** December 2025 · **GPA:** 4.0
+**Texas A&M University**, College Station, TX  
+**Master of Science, Data Science (Computer Science Track)**  
+Graduation: December 2025 | GPA: 4.0
 
-### SRM Institute of Science and Technology
-**Bachelor of Technology in Computer Science and Engineering** : AI/ML Specialization  
-**Graduation:** May 2022 · **GPA:** 3.99
-
----
-
-## Experience
-
-### Hewlett Packard Enterprise — Houston, TX
-**Data Scientist Intern** · **May 2025 – Dec 2025**
-
-- Developed and integrated a monitoring agent and advisory system into database infrastructure workflows, enabling proactive detection of growth and performance risks while reducing manual DBA intervention.
-- Built a database log intelligence system processing **20M+ daily logs** to detect performance issues, generate remediation plans, and execute controlled corrective actions through AI agents.
-- Built and deployed an AI-driven retrieval and reasoning system for database engineering teams to surface documentation and operational insights across large-scale production systems.
-
-### Texas A&M University — College Station, TX
-**Student Assistant** · **Nov 2024 – May 2025**
-
-- Developed a transformer-based deep learning model to predict blood flow pressure from 3D vessel geometry and boundary conditions, modeling structured physical systems (**R² = 0.95**).
-- Built a U-Net model to segment CT scans and reconstruct 3D pulmonary artery structures for downstream simulation.
-- Designed and optimized a reinforcement learning agent for sequential decision-making in medical workflows.
-
-### Affinsys AI — Bangalore, India
-**Software Engineer** · **Sep 2021 – Jul 2024**
-
-- Engineered and productionized BERT-based multilingual NLP pipelines for intent and entity classification at scale (**350K+ users**), achieving **20% compute optimization** through model and inference improvements.
-- Architected and deployed a scalable Retrieval-Augmented Generation (RAG) system integrating semantic retrieval with LLM-based generation, replacing rule-based pipelines and reducing retraining effort by **80%**.
-- Led a 5-member team to architect and deploy a real-time, production-grade voice-driven decision system integrating ASR, NLP, and TTS, reducing end-to-end response latency by **30%**.
-- Designed and optimized multilingual speech recognition systems with VAD-based preprocessing and noise-robust training, increasing ASR accuracy by **35%** in real-world environments.
-- Built a low-data voice cloning pipeline for speaker-adaptive speech synthesis from **1 minute of audio**, optimizing for data efficiency and inference quality.
-- Improved customer retention by **20% YoY** by integrating sentiment analysis models into the company's multilingual conversational AI platform to enable personalized, context-aware responses.
-- Designed and deployed anomaly detection pipelines for payment fraud monitoring, incorporating continuous model evaluation and drift detection in production.
+**SRM Institute of Science and Technology**  
+**Bachelor of Technology, Computer Science and Engineering (AI/ML Specialization)**  
+Graduation: May 2022 | GPA: 3.99
 
 ---
 
-## Projects
+## PROFESSIONAL EXPERIENCE
 
-- Developed an audio-conditioned motion model using a 3D Morphable Model (3DMM) to generate real-time, lip-synced 3D facial dynamics.
-- Implemented and evaluated PPO agents in Gymnasium continuous-control tasks, studying reward design, convergence behavior, and policy stability under varying training conditions.
+### Hewlett Packard Enterprise | Houston, TX
+**Data Scientist Intern** | May 2025 – Dec 2025
+
+- Developed and integrated an AI-powered monitoring agent and advisory system into database infrastructure workflows, enabling proactive detection of growth and performance risks while reducing manual DBA intervention.
+- Built a database log intelligence platform processing **20M+ daily logs** to detect performance bottlenecks, generate remediation plans, and execute controlled corrective actions through AI agents.
+- Designed and deployed an AI-driven retrieval and reasoning system for database engineering teams, improving access to documentation and operational insights across large-scale production environments.
+
+### Texas A&M University | College Station, TX
+**Student Assistant** | Nov 2024 – May 2025
+
+- Developed a transformer-based deep learning model to estimate pulmonary blood flow pressure from 3D vessel geometry and boundary conditions, achieving **R² = 0.95**.
+- Built a U-Net segmentation model for CT scans to reconstruct 3D pulmonary artery structures for downstream computational simulations.
+- Designed and optimized reinforcement learning agents for sequential medical decision-making tasks.
+
+### Affinsys AI | Bangalore, India
+**Software Engineer** | Sep 2021 – Jul 2024
+
+- Engineered production-grade multilingual BERT-based NLP pipelines for intent classification and named entity recognition supporting **350K+ users**.
+- Improved inference efficiency by **20%** through model optimization and deployment enhancements.
+- Architected and deployed a scalable Retrieval-Augmented Generation (RAG) platform combining semantic search with LLM reasoning, reducing retraining effort by **80%**.
+- Led a team of five engineers to develop a real-time voice-driven conversational AI platform integrating ASR, NLP, and TTS, reducing response latency by **30%**.
+- Designed multilingual speech recognition systems with VAD preprocessing and noise-robust training, improving ASR accuracy by **35%**.
+- Built a low-data voice cloning pipeline capable of speaker adaptation using only **one minute of speech**.
+- Increased customer retention by **20% YoY** through sentiment-aware conversational AI models.
+- Developed anomaly detection pipelines for payment fraud monitoring with continuous model evaluation and drift detection.
 
 ---
 
-## Publications
+## PROJECTS
 
-- **International Journal of Computer (IJC 2023)** — *Optimal Use of Computational Resources when Using LLM.*
-- **ASME SB3C Summer Bioengineering Conference (2025)** — *Sahoo, S. Non-Invasive Estimation of Pulmonary Vasculature Pressure via 1D FSI and Transformer Model.* **Accepted**
-- **IEEE Engineering in Medicine and Biology Society (EMBS 2025)** — *Human-Guided Feature Selection for Accurate Cardiomyocyte Dysfunction Classification.* **Accepted**
+### Audio-Driven 3D Facial Animation
+
+- Developed an audio-conditioned motion generation model using a 3D Morphable Model (3DMM) for real-time lip-synced facial animation.
+- Designed deep learning pipelines for synchronized facial expression generation from speech.
+
+### Reinforcement Learning Benchmark Suite
+
+- Implemented PPO agents using Gymnasium continuous-control environments.
+- Evaluated reward shaping, convergence behavior, and policy stability across multiple reinforcement learning tasks.
 
 ---
 
-## Skills
+## PUBLICATIONS
 
-**Programming & Systems:** Python, C/C++, SQL, Linux, Docker, APIs, PostgreSQL, CUDA, OpenMP, MPI  
-**Machine Learning:** Reinforcement Learning, Policy Optimization, NLP, Computer Vision, Recommendation Systems  
-**Generative AI:** LLMs, RAG, VLMs, Multimodal Models, Vector Databases, LangChain, LangGraph  
-**Frameworks & Cloud:** PyTorch, TensorFlow, Scikit-learn, Pandas, Apache Spark, AWS, GCP, Microsoft Azure
+- **International Journal of Computer (2023)** — *Optimal Use of Computational Resources when Using LLM.*
+- **ASME SB3C Summer Bioengineering Conference (2025)** — *Non-Invasive Estimation of Pulmonary Vasculature Pressure via 1D FSI and Transformer Model.* (Accepted)
+- **IEEE EMBS (2025)** — *Human-Guided Feature Selection for Accurate Cardiomyocyte Dysfunction Classification.* (Accepted)
+
+---
+
+## TECHNICAL SKILLS
+
+**Programming Languages:** Python, C, C++, SQL
+
+**Machine Learning:** Deep Learning, Reinforcement Learning, NLP, Computer Vision, Recommendation Systems, Time Series, Transformers
+
+**Generative AI:** Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Vision-Language Models (VLMs), Multimodal AI, LangChain, LangGraph, Vector Databases
+
+**Frameworks & Libraries:** PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, Apache Spark
+
+**Cloud & Infrastructure:** AWS, Google Cloud Platform (GCP), Microsoft Azure, Docker, Linux, PostgreSQL, CUDA, OpenMP, MPI, REST APIs
+
+**Tools:** Git, GitHub, Jupyter Notebook
