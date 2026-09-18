@@ -590,7 +590,7 @@ article .icon,
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 2.2rem auto 0;
@@ -622,6 +622,15 @@ article .icon,
 .project-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.project-image-wide {
+  background: #061a2b;
+  aspect-ratio: 16 / 9;
+}
+
+.project-image-wide .project-img {
   object-fit: cover;
 }
 
@@ -807,6 +816,9 @@ footer p {
 
 .project-links {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 .project-btn {
