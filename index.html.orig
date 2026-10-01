@@ -369,6 +369,13 @@
                 CaseTrace
               </h3>
 
+              <p class="project-description">
+                Built a computer-use prototype that discovers a bounded browser
+                workflow on a synthetic bank, compiles it into a typed capability,
+                and replays it deterministically with different inputs, including
+                human handoff and hard checkpoint failure.
+              </p>
+
               <div class="project-outcomes">
                 <p class="project-outcomes-title">Impact</p>
                 <ul>
@@ -433,6 +440,12 @@
               MedReL: Radiology Report Generation
             </h3>
 
+            <p class="project-description">
+              Fine-tuned a vision-language model using GRPO algorithm to generate more accurate radiology reports, improving
+              clinical consistency while reducing hallucinated findings through
+              sequence-level reward optimization.
+            </p>
+
             <div class="project-outcomes">
               <p class="project-outcomes-title">Impact</p>
               <ul>
@@ -480,6 +493,13 @@
               <h3 class="experience-sub-title project-title">
                 Howdy Orgs
               </h3>
+
+              <p class="project-description">
+                Built an AI-powered recommendation platform that helps Texas A&M students
+                discover relevant student organizations using a hybrid search pipeline
+                combining BM25 keyword retrieval and SBERT semantic similarity for more
+                accurate recommendations.
+              </p>
 
               <div class="project-outcomes">
                 <p class="project-outcomes-title">Impact</p>
@@ -530,13 +550,20 @@
               LLM Bias Detection Framework
             </h3>
 
+            <p class="project-description">
+              Developed a framework to detect subtle biases in large language model
+              outputs using a custom Large Language Model Bias Index (LLMBI) and
+              explainable AI techniques, providing transparent bias analysis with
+              interpretable model explanations.
+            </p>
+
             <div class="project-outcomes">
               <p class="project-outcomes-title">Impact</p>
               <ul>
                 <li class="project-outcome">
-                  Tested 60 model outputs across 6 demographic bias categories,
-                  flagging bias signals in over 80% of intentionally biased
-                  samples and generating SHAP/LIME explanations to identify the
+                  Tested <strong>60 model outputs across 6 demographic bias categories</strong>,
+                  flagging bias signals in <strong>over 80% of intentionally biased
+                  samples</strong> and generating SHAP/LIME explanations to identify the
                   language driving each prediction.
                 </li>
               </ul>

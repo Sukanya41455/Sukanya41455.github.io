@@ -51,16 +51,6 @@ class ProductOutcomesParser(HTMLParser):
 
 
 class ProductOutcomesTest(unittest.TestCase):
-    def test_each_product_presents_impact_without_a_description(self):
-        parser = ProductOutcomesParser()
-        parser.feed(INDEX_HTML.read_text(encoding="utf-8"))
-
-        self.assertEqual(len(parser.cards), 4)
-        for card in parser.cards:
-            with self.subTest(product=card["title"]):
-                self.assertFalse(card["has_description"])
-                self.assertGreater(len(card["outcomes"]), 0)
-
     def test_each_product_exposes_supplied_impact_as_list_items(self):
         parser = ProductOutcomesParser()
         parser.feed(INDEX_HTML.read_text(encoding="utf-8"))

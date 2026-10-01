@@ -633,6 +633,7 @@ article .icon,
   margin: 0 0 1.15rem;
   padding: 1rem 1.05rem;
   border: 1px solid rgb(220, 220, 220);
+  border-left: 4px solid var(--dark);
   border-radius: 1rem;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
