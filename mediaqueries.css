@@ -53,7 +53,7 @@
     width: 90%;
   }
 
-  .experience-grid,
+  .skills-grid,
   .project-grid,
   .publication-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -67,7 +67,6 @@
 
   .skills-grid,
   .education-grid,
-  .experience-grid,
   .project-grid,
   .publication-grid {
     grid-template-columns: 1fr;
@@ -77,12 +76,12 @@
     grid-template-columns: 1fr;
   }
 
-  .experience-heading {
+  .role-header {
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.75rem;
   }
 
-  .experience-meta {
+  .role-meta {
     text-align: left;
   }
 
@@ -148,8 +147,7 @@
     font-size: 0.88rem;
   }
 
-  .experience-showcase-card,
-  .experience-card,
+  .experience-role,
   .publication-card,
   .education-card {
     padding: 1.25rem;
@@ -159,8 +157,28 @@
     font-size: 1.25rem;
   }
 
-  .article-container {
+  .role-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .role-location {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .company-metrics {
     grid-template-columns: 1fr;
+    padding: 1rem 1.25rem;
+  }
+
+  .experience-bullets {
+    margin-left: 1rem;
+  }
+
+  .skill-card {
+    padding: 1.15rem;
   }
 
   .project-card {

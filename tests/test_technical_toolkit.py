@@ -51,20 +51,20 @@ class TechnicalToolkitTest(unittest.TestCase):
 
         self.assertIn("Backend", parser.categories)
         self.assertIn("AI Systems", parser.categories)
-        self.assertIn("Cloud & Delivery", parser.categories)
+        self.assertIn("Cloud and Delivery", parser.categories)
         self.assertEqual(
             parser.categories["Backend"],
-            ["Python", "Django", "REST APIs", "SQL", "Microservices", "PostgreSQL"],
+            ["Python", "Django", "REST APIs", "SQL", "Microservices"],
         )
         self.assertEqual(
             parser.categories["AI Systems"],
-            ["AI Agents", "RAG", "LLMs", "Model Serving", "Vector Databases", "PyTorch"],
+            ["AI Agents", "RAG", "LLMs", "Model Serving", "Vector Databases (Weaviate, Qdrant)", "PyTorch"],
         )
         self.assertEqual(
-            parser.categories["Cloud & Delivery"],
-            ["AWS", "Docker", "Jenkins", "CI/CD", "Observability", "Linux"],
+            parser.categories["Cloud and Delivery"],
+            ["AWS (EC2, Lambda, S3)", "Docker", "Jenkins", "CI/CD", "Observability"],
         )
-        self.assertIn("Machine Learning", parser.categories)
+        self.assertEqual(set(parser.categories), {"Backend", "AI Systems", "Cloud and Delivery"})
 
 
 if __name__ == "__main__":
