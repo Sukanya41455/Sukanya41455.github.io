@@ -623,8 +623,43 @@ article .icon,
 }
 
 .project-description {
-  line-height: 1.7;
+  font-size: 0.88rem;
+  line-height: 1.65;
   margin-bottom: 1rem;
+}
+
+.project-outcomes {
+  margin-bottom: 1rem;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid rgb(220, 220, 220);
+  border-left: 3px solid var(--dark);
+  border-radius: 0.8rem;
+  background: white;
+}
+
+.project-outcomes-title {
+  margin-bottom: 0.55rem;
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.project-outcomes ul {
+  display: grid;
+  gap: 0.65rem;
+  padding-left: 1.1rem;
+}
+
+.project-outcome {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.project-outcome::marker {
+  color: var(--dark);
 }
 
 .tag-list {
