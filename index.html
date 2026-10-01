@@ -17,7 +17,6 @@
       <a class="logo" href="#profile" aria-label="Go to top">Sukanya Sahoo</a>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -42,7 +41,6 @@
           <span></span>
         </button>
         <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -64,11 +62,20 @@
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Sukanya Sahoo</h1>
-          <p class="section__text__p2">AI/ML Engineer</p>
+          <p class="section__text__p2">Backend Software Engineer</p>
           <p class="hero-summary">
-            I build reliable AI products across LLM systems, multilingual speech,
-            computer vision, reinforcement learning, and production data platforms.
+            Entry-Level Backend Software Engineer with 2+ years of experience 
+            building production systems across B2B Enterprise, FinTech, and HealthTech, 
+            with systems serving 350K+ users and processing 30M+ logs per day, 
+            plus 3 AI research papers including work accepted at IEEE EMBS 2025.
           </p>
+          <p class="hero-highlight">
+            At Hewlett Packard Enterprise, I built an AI agent platform that
+            processes 30M+ database logs daily and reduced manual troubleshooting
+            by over 90%. Previously, I built chatbots and voice assistants at
+            Affinsys AI serving 350K+ banking users. Based in Houston, Texas.
+          </p>
+
           <div class="btn-container">
             <a class="btn btn-color-2" href="./cv.md" download>Download CV</a>
             <a class="btn btn-color-1" href="#contact">Contact Info</a>
@@ -98,50 +105,9 @@
         </div>
       </section>
 
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h2 class="title">About Me</h2>
-        <div class="section-container">
-          <div class="about-details-container">
-            <div class="about-containers about-stats">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt=""
-                  class="icon static-icon"
-                />
-                <h3>Experience</h3>
-                <p>4+ years<br />AI/ML &amp; Software Engineering</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt=""
-                  class="icon static-icon"
-                />
-                <h3>Education</h3>
-                <p>M.S. Data Science<br />B.Tech CS specialization in AI/ML</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                I am a software and AI engineer focused on turning research ideas into
-                dependable production systems. My work spans agentic database
-                intelligence, retrieval-augmented generation, multilingual NLP and
-                speech, medical imaging, and reinforcement learning. I enjoy solving
-                problems end to end from data and model design to scalable deployment,
-                evaluation, and operational monitoring.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt=""
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
+      <a class="credibility-strip" href="#publications">
+        Published researcher: 3 papers, including work accepted at IEEE EMBS 2025 and ASME SB3C 2025. Shortlisted for the AWS re:Invent 2026 builders grant.
+      </a>
 
       <section id="experience" class="content-section">
         <p class="section__text__p1">Work With Production Impact</p>
@@ -188,39 +154,6 @@
           <article class="details-container color-container experience-showcase-card">
             <div class="experience-image-wrap">
               <img
-                src="./assets/experience-rag-voice.png"
-                alt="Enterprise retrieval and multilingual voice AI illustration"
-                class="experience-img"
-              />
-              <span class="experience-year">2024</span>
-            </div>
-            <div class="experience-card-content">
-              <p class="eyebrow">Production GenAI · Speech Systems</p>
-              <h3 class="experience-feature-title">Enterprise RAG &amp; Multilingual Voice AI</h3>
-              <div class="role-line">
-                <strong>Affinsys AI</strong>
-                <span>Software Engineer · Bangalore, India</span>
-                <span>2024</span>
-              </div>
-              <p class="experience-description">
-                Architected scalable retrieval and conversational AI systems spanning
-                multilingual NLP, ASR, TTS, and real-time decision workflows used in
-                customer-facing production environments.
-              </p>
-              <div class="metric-grid" aria-label="Key outcomes">
-                <div><strong>350K+</strong><span>users served</span></div>
-                <div><strong>80%</strong><span>less retraining effort</span></div>
-                <div><strong>30%</strong><span>lower response latency</span></div>
-              </div>
-              <div class="tag-list experience-tags">
-                <span>RAG</span><span>BERT</span><span>ASR / TTS</span><span>MLOps</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="details-container color-container experience-showcase-card">
-            <div class="experience-image-wrap">
-              <img
                 src="./assets/experience-medical-ai.png"
                 alt="Transformer-based medical AI and vascular modeling illustration"
                 class="experience-img"
@@ -247,6 +180,39 @@
               </div>
               <div class="tag-list experience-tags">
                 <span>Transformers</span><span>U-Net</span><span>3D Geometry</span><span>RL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="details-container color-container experience-showcase-card">
+            <div class="experience-image-wrap">
+              <img
+                src="./assets/experience-rag-voice.png"
+                alt="Enterprise retrieval and multilingual voice AI illustration"
+                class="experience-img"
+              />
+              <span class="experience-year">2024</span>
+            </div>
+            <div class="experience-card-content">
+              <p class="eyebrow">Production GenAI · Speech Systems</p>
+              <h3 class="experience-feature-title">Enterprise RAG &amp; Multilingual Voice AI</h3>
+              <div class="role-line">
+                <strong>Affinsys AI</strong>
+                <span>Software Engineer · Bangalore, India</span>
+                <span>2024</span>
+              </div>
+              <p class="experience-description">
+                Architected scalable retrieval and conversational AI systems spanning
+                multilingual NLP, ASR, TTS, and real-time decision workflows used in
+                customer-facing production environments.
+              </p>
+              <div class="metric-grid" aria-label="Key outcomes">
+                <div><strong>350K+</strong><span>users served</span></div>
+                <div><strong>80%</strong><span>less retraining effort</span></div>
+                <div><strong>30%</strong><span>lower response latency</span></div>
+              </div>
+              <div class="tag-list experience-tags">
+                <span>RAG</span><span>BERT</span><span>ASR / TTS</span><span>MLOps</span>
               </div>
             </div>
           </article>
@@ -506,6 +472,25 @@
         </div>
       </section>
 
+      <section id="education" class="content-section education-section">
+        <p class="section__text__p1">Academic Foundation</p>
+        <h2 class="title">Education</h2>
+        <div class="education-grid">
+          <article class="details-container education-card">
+            <p class="eyebrow">December 2025</p>
+            <h3>Texas A&amp;M University</h3>
+            <p class="degree">Master of Science in Data Science</p>
+            <p>Computer Science Track · GPA: 4.0</p>
+          </article>
+          <article class="details-container education-card">
+            <p class="eyebrow">May 2022</p>
+            <h3>SRM Institute of Science and Technology</h3>
+            <p class="degree">B.Tech in Computer Science and Engineering</p>
+            <p>AI/ML Specialization · GPA: 3.99</p>
+          </article>
+        </div>
+      </section>
+
       <section id="publications" class="content-section">
         <p class="section__text__p1">Research &amp; Writing</p>
         <h2 class="title">Publications</h2>
@@ -541,26 +526,12 @@
               Explores expert-guided feature selection for robust biomedical
               classification.
             </p>
-            <span class="status-badge">Accepted</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="education" class="content-section education-section">
-        <p class="section__text__p1">Academic Foundation</p>
-        <h2 class="title">Education</h2>
-        <div class="education-grid">
-          <article class="details-container education-card">
-            <p class="eyebrow">December 2025</p>
-            <h3>Texas A&amp;M University</h3>
-            <p class="degree">Master of Science in Data Science</p>
-            <p>Computer Science Track · GPA: 4.0</p>
-          </article>
-          <article class="details-container education-card">
-            <p class="eyebrow">May 2022</p>
-            <h3>SRM Institute of Science and Technology</h3>
-            <p class="degree">B.Tech in Computer Science and Engineering</p>
-            <p>AI/ML Specialization · GPA: 3.99</p>
+            <a
+              class="status-badge published"
+              href="https://pubmed.ncbi.nlm.nih.gov/41019203/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Published</a>
           </article>
         </div>
       </section>
@@ -569,8 +540,8 @@
         <p class="section__text__p1">Let’s Build Something Useful</p>
         <h2 class="title">Contact Me</h2>
         <p class="contact-intro">
-          I am interested in software engineering, applied AI, machine learning, and
-          research-driven product roles.
+          I'm looking for Entry Level Backend Software Engineer roles 
+          at startups in B2B SaaS, FinTech, and HealthTech.
         </p>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
@@ -609,7 +580,7 @@
             </p>
           </div>
         </div>
-        <p class="location-line">Texas, United States</p>
+        <p class="location-line">Houston, TX</p>
       </section>
     </main>
 
@@ -617,7 +588,6 @@
       <nav aria-label="Footer navigation">
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>

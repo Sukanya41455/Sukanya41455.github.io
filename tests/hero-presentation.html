@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hero presentation test</title>
+  </head>
+  <body>
+    <iframe id="desktop" title="Desktop portfolio" src="../index.html" width="1440" height="1000"></iframe>
+    <iframe id="mobile" title="Mobile portfolio" src="../index.html" width="390" height="844"></iframe>
+    <pre id="result">RUNNING</pre>
+
+    <script>
+      const expectedSummary =
+        "Entry-Level Backend Software Engineer with 2+ years of experience building production systems across B2B Enterprise, FinTech, and HealthTech, with systems serving 350K+ users and processing 30M+ logs per day, plus 3 AI research papers including work accepted at IEEE EMBS 2025.";
+      const expectedHighlight =
+        "At Hewlett Packard Enterprise, I built an AI agent platform that processes 30M+ database logs daily and reduced manual troubleshooting by over 90%. Previously, I built chatbots and voice assistants at Affinsys AI serving 350K+ banking users. Based in Houston, Texas.";
+
+      const normalize = (value) => value.replace(/\s+/g, " ").trim();
+      const whenLoaded = (frame) =>
+        new Promise((resolve) => frame.addEventListener("load", () => resolve(frame)));
+
+      Promise.all([
+        whenLoaded(document.querySelector("#desktop")),
+        whenLoaded(document.querySelector("#mobile")),
+      ]).then((frames) => {
+        const failures = [];
+
+        for (const frame of frames) {
+          const label = frame.id;
+          const view = frame.contentWindow;
+          const doc = frame.contentDocument;
+          const summary = doc.querySelector(".hero-summary");
+          const highlight = doc.querySelector(".hero-highlight");
+          const summaryStyle = view.getComputedStyle(summary);
+          const highlightStyle = view.getComputedStyle(highlight);
+
+          const check = (condition, message) => {
+            if (!condition) failures.push(`${label}: ${message}`);
+          };
+
+          check(normalize(summary.textContent) === expectedSummary, "summary text changed");
+          check(normalize(highlight.textContent) === expectedHighlight, "highlight text changed");
+          check(parseFloat(summaryStyle.fontSize) >= 15, "summary text is below 15px");
+          check(parseFloat(highlightStyle.fontSize) >= 13, "highlight text is below 13px");
+          check(summaryStyle.textAlign === "center", "summary is not centered");
+          check(highlightStyle.textAlign === "center", "highlight is not centered");
+          check(highlightStyle.backgroundColor === "rgba(0, 0, 0, 0)", "highlight still has a card background");
+          check(highlightStyle.boxShadow === "none", "highlight still has a card shadow");
+          check(highlightStyle.borderLeftWidth === "0px", "highlight still has a heavy left border");
+          check(doc.documentElement.scrollWidth <= view.innerWidth, "page overflows horizontally");
+        }
+
+        const result = document.querySelector("#result");
+        result.dataset.status = failures.length ? "fail" : "pass";
+        result.textContent = failures.length ? `FAIL\n${failures.join("\n")}` : "PASS";
+        document.title = failures.length ? "FAIL" : "PASS";
+      });
+    </script>
+  </body>
+</html>

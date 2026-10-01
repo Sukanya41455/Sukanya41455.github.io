@@ -8,12 +8,8 @@
     margin-bottom: 3rem;
   }
 
-  .about-stats {
-    flex-wrap: wrap;
-  }
-
-  .about-stats .details-container {
-    flex: 1 1 12rem;
+  .credibility-strip {
+    width: calc(100% - 12rem);
   }
 }
 
@@ -29,8 +25,7 @@
     justify-content: space-between;
   }
 
-  #profile,
-  .section-container {
+  #profile {
     display: block;
   }
 
@@ -41,10 +36,6 @@
 
   .section__text {
     margin: 0 auto;
-  }
-
-  .arrow {
-    display: none;
   }
 
   section {
@@ -58,16 +49,8 @@
     margin: 0 auto 2rem;
   }
 
-  .about-art-container {
-    margin-bottom: 0;
-  }
-
-  .about-containers {
-    margin-top: 1.5rem;
-  }
-
-  .section-container {
-    min-height: auto;
+  .credibility-strip {
+    width: 90%;
   }
 
   .experience-grid,
@@ -140,6 +123,13 @@
     font-size: 0.95rem;
   }
 
+  .hero-highlight {
+    margin-bottom: 1.4rem;
+    padding: 1rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
   .btn-container {
     flex-wrap: wrap;
   }
@@ -149,13 +139,9 @@
     max-width: 16rem;
   }
 
-  .about-stats {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .text-container {
-    text-align: left;
+  .credibility-strip {
+    padding: 0.9rem 1rem;
+    font-size: 0.88rem;
   }
 
   .experience-showcase-card,
