@@ -61,6 +61,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .education-card h3 {
+    min-height: auto;
+  }
+
   .skills-grid,
   .education-grid,
   .experience-grid,

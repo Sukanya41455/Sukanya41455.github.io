@@ -741,6 +741,7 @@ article .icon,
 
 .education-card h3 {
   font-size: 1.35rem;
+  min-height: 2lh;
   margin-bottom: 0.7rem;
 }
 
