@@ -781,6 +781,10 @@ footer p {
   text-align: center;
 }
 
+.footer-personal {
+  margin-bottom: 0.5rem;
+}
+
 /* FOCUS */
 
 :focus-visible {
