@@ -54,7 +54,16 @@ class TechnicalToolkitTest(unittest.TestCase):
         self.assertIn("Cloud and Delivery", parser.categories)
         self.assertEqual(
             parser.categories["Backend"],
-            ["Python", "Django", "REST APIs", "SQL", "Microservices"],
+            [
+                "Python",
+                "Django",
+                "REST APIs",
+                "SQL",
+                "Microservices",
+                "Kafka",
+                "PySpark",
+                "PostgreSQL",
+            ],
         )
         self.assertEqual(
             parser.categories["AI Systems"],
@@ -62,7 +71,16 @@ class TechnicalToolkitTest(unittest.TestCase):
         )
         self.assertEqual(
             parser.categories["Cloud and Delivery"],
-            ["AWS (EC2, Lambda, S3)", "Docker", "Jenkins", "CI/CD", "Observability"],
+            [
+                "AWS (EC2, Lambda, S3)",
+                "Docker",
+                "Jenkins",
+                "CI/CD",
+                "Observability",
+                "Kubernetes",
+                "Prometheus",
+                "Grafana",
+            ],
         )
         self.assertEqual(set(parser.categories), {"Backend", "AI Systems", "Cloud and Delivery"})
 

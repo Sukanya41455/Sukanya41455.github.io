@@ -21,7 +21,21 @@ class ProductOutcomesParser(HTMLParser):
         classes = set(attributes.get("class", "").split())
 
         if tag == "article" and "project-card" in classes:
-            self._card = {"title": "", "outcomes": [], "has_description": False}
+            self._card = {
+                "title": "",
+                "outcomes": [],
+                "has_description": False,
+                "image_src": "",
+                "github_href": "",
+            }
+        elif self._card is not None and tag == "img" and "project-img" in classes:
+            self._card["image_src"] = attributes.get("src", "")
+        elif (
+            self._card is not None
+            and tag == "a"
+            and "github.com" in attributes.get("href", "")
+        ):
+            self._card["github_href"] = attributes["href"]
         elif self._card is not None and tag == "h3" and "project-title" in classes:
             self._capture_title = True
             self._title_parts = []
@@ -55,7 +69,7 @@ class ProductOutcomesTest(unittest.TestCase):
         parser = ProductOutcomesParser()
         parser.feed(INDEX_HTML.read_text(encoding="utf-8"))
 
-        self.assertEqual(len(parser.cards), 4)
+        self.assertEqual(len(parser.cards), 5)
         for card in parser.cards:
             with self.subTest(product=card["title"]):
                 self.assertFalse(card["has_description"])
@@ -81,6 +95,30 @@ class ProductOutcomesTest(unittest.TestCase):
 
         self.assertEqual(len(outcomes_by_title["LLM Bias Detection Framework"]), 1)
         self.assertIn("60 model outputs across 6 demographic bias categories", outcomes_by_title["LLM Bias Detection Framework"][0])
+
+    def test_streamforge_card_uses_supplied_content_and_links(self):
+        parser = ProductOutcomesParser()
+        parser.feed(INDEX_HTML.read_text(encoding="utf-8"))
+
+        self.assertEqual(
+            parser.cards[0]["title"],
+            "StreamForge: Real-time Marketplace Analytics Platform",
+        )
+
+        cards_by_title = {card["title"]: card for card in parser.cards}
+        title = "StreamForge: Real-time Marketplace Analytics Platform"
+        self.assertIn(title, cards_by_title)
+        streamforge = cards_by_title[title]
+
+        self.assertEqual(streamforge["image_src"], "./assets/project_streamforge.png")
+        self.assertEqual(
+            streamforge["github_href"],
+            "https://github.com/Sukanya41455/StreamForge",
+        )
+        self.assertEqual(len(streamforge["outcomes"]), 1)
+        self.assertIn("250+ events/sec", streamforge["outcomes"][0])
+        self.assertIn("stream recovery in <30 seconds", streamforge["outcomes"][0])
+        self.assertIn("API p95 latency below 300 ms", streamforge["outcomes"][0])
 
 
 if __name__ == "__main__":

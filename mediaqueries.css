@@ -215,3 +215,17 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 901px) {
+  .project-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .project-card {
+    grid-column: span 2;
+  }
+
+  .project-card:last-child:nth-child(odd) {
+    grid-column: 2 / span 2;
+  }
+}
